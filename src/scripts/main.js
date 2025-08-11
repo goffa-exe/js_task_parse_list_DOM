@@ -19,7 +19,7 @@ function getEmployees(list) {
     return {
       name: person.textContent.trim(),
       position: person.dataset.position,
-      salary: dataToNumber(person.dataset.salary.slice(1).replace(/,/g, '')),
+      salary: dataToNumber(person.dataset.salary),
       age: Number(person.dataset.age),
     };
   });
